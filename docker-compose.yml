@@ -1,0 +1,16 @@
+version: "3.10"
+services:
+  ml-4-eo:
+    container_name: ml-4-eo_${USER}
+    image: ml-4-eo-${USER}
+    build:
+      context: .
+      target: dev
+    volumes:
+      - $HOME/.aws:/root/.aws
+      - ./:/code
+      - $HOME/cache:/root/cache
+      - $HOME/.vscode-server:/root/.vscode-server
+      - $HOME/.gitconfig:/etc/.gitconfig
+      - $HOME/.ssh:/root/.ssh
+    command: /bin/sh -c "while sleep 1000; do :; done"
