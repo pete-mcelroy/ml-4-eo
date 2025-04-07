@@ -51,6 +51,7 @@ matplotlib==3.5.1
 multidict==6.1.0
 mypy-extensions==1.0.0
 mypy==1.5
+nbformat>=4.2.0
 numpy==1.26.4
 odc-stac>=0.3.6,<0.3.10
 onnx==1.17.0
