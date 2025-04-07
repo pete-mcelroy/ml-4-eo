@@ -20,7 +20,7 @@ from utils.constants import WGS84
 
 class PrithviDataset(Dataset):
     """
-    Dataset base class for the CropThreat dataset.
+    Dataset for the Prithvi foundation model.
 
     Args:
         chip_dir (str): Directory containing the image chips.
